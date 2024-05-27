@@ -10,9 +10,8 @@ export default function Textfield() {
       }
     },[]
   )
-  const [task, setTask] = useState("");  // Change the state variable name
-  const [tasks, setTasks] = useState([]);  // Use a different name for the state array
-
+  const [task, setTask] = useState("");  
+  const [tasks, setTasks] = useState([]);  
   const addTask = () => {
     if (task.trim()) {
       const newTsk = { id: new Date().getTime().toString(), title: task };
